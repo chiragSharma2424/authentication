@@ -1,0 +1,17 @@
+{
+  "name": "auth-part1",
+  "version": "1.0.0",
+  "description": "a full stack auth system",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {},
+  "keywords": [],
+  "author": "devrag",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
