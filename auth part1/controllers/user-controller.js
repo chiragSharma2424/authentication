@@ -33,6 +33,29 @@ export const register = async (req, res) => {
         }
 
         // now user verification token 
+        const token = crypto.randomBytes(32).toString("hex");
+        const tokenExpiry = new Date.now() + 10 * 60 * 60 * 1000;
+
+        // create a new user
+        const user = await User.create({
+            name,
+            email,
+            password,
+            verificationToken: token,
+            verificationTokenExpiry: tokenExpiry
+        });
+
+
+        if(!user) {
+            return res.status(200).json({
+                success: false,
+                msg: "User not created"
+            })
+        }
+
+
+        // how we can send verification token to user, using mail
+        // send mail 
         
     } catch(err) {
         console.log(err);
