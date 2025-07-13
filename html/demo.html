@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #demo1 {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        #demo2 {
+            border: 2px solid black;
+            margin-top: 5px;
+            padding: 10px;
+        }
+        #parent {
+            margin-top: 30px;
+            border: solid red 3px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+        #parent div {
+            border: solid blue 2px;
+            padding: 20px;
+            background-color: bisque;
+            min-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo1">
+        Chriag
+    </div>
+    <div id="demo2">
+        Sharma
+    </div>
+
+    <div id="parent">
+        <div>Child 1</div>
+        <div>Child 2, more content</div>
+        <div>Child 3</div>
+        <div>Child 4, more content added</div>
+    </div>
+</body>
+</html>
